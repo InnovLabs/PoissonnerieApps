@@ -23,7 +23,6 @@ public class VersementController {
 	@RequestMapping(value = "/versements/{id}", method = RequestMethod.GET)
 	public Object getClient(@PathVariable("id") long id) {
 		ResponseData data;
-		
 		try {
 			data = new ResponseData(versementDAO.find(id));
 			
